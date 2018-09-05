@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route("/", methods=['POST'])
 def predict():
-    data = [{'industrical code':'93.299', 'description':'Fritidsvirksomhet ellers' }]
-    return jsonify(data), 200
+    prediction = [{'industricalCode':'93.299', 'description':'Fritidsvirksomhet ellers' }]
+    return jsonify(prediction), 200
 
 if __name__ == '__main__':
     app.run(debug=True)

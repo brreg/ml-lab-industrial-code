@@ -36,11 +36,15 @@ Determine (classify) a given organization's industrial code based on 'formaal' a
 * pickle ([Python object serialization](https://docs.python.org/2.7/library/pickle.html))
 * sklearn ([scikit-learn](http://scikit-learn.org/stable/))
 ### Deploy
-
+To start the server locally:
+```
+cd api
+python server.py
+```
 ### Docker
-
+TODO: Describe how to build and start the api as a dockerized service
 ## Usage locally
-With curl:
+Once the server is running, you can use it with e.g. curl:
 ```
 curl \
   --include \

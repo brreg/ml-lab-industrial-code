@@ -3,8 +3,7 @@
 #
 # # Import libraries and packages
 # from sklearn import svm, datasets
-# import pickle
-# import numpy as np
+# from sklearn.externals import joblib
 #
 # # Load Sample data
 # iris = datasets.load_iris()
@@ -18,5 +17,5 @@
 #
 # # Persist model so that it can be used by different consumers
 # svmFile = open('SVMModel.pckl', 'wb')
-# pickle.dump(svmModel, svmFile)
+# joblib.dump(svmModel, svmFile)
 # svmFile.close()

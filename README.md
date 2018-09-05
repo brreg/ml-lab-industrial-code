@@ -13,9 +13,9 @@ Determine (classify) a given organization's industrial code based on 'formaal' a
 * Update model
 
 ## Solution architecture
-
+TODO
 ## Solution
-
+The solution is a simple python project that implements a script for training a model as well as a server that exposes the api.
 ### Project structure
 ```
 -- helloMLAPI
@@ -33,7 +33,8 @@ Determine (classify) a given organization's industrial code based on 'formaal' a
 ```
 ### Requirements
 * Flask ([Python micro web framework](http://flask.pocoo.org/))
-* pickle ([Python object serialization](https://docs.python.org/2.7/library/pickle.html))
+* pickle ([Python object serialization](https://docs.python.org/2.7/library/pickle.html)), or
+* joblib ([Scikit learn model persistence](http://scikit-learn.org/stable/modules/model_persistence.html))
 * sklearn ([scikit-learn](http://scikit-learn.org/stable/))
 ### Deploy
 To start the server locally:

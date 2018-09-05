@@ -5,6 +5,16 @@ A simple project to experiment with exposing an ML-model as a REST API.
 ## Case
 Determine (classify) a given organization's industrial code based on 'formaal' as given by user.
 
+## Machine learning theory
+The task at hand is considered a task of text classification (aka categorization). As such we are going to represent the formaal as a feature vector X. We must consider whether to apply a process of feature selection to speed up the classification.
+
+Once we have chosen a set of features, we can apply any of the supervised learning techniques:
+* k-nearest-neighbors,
+* support vector machines,
+* decision trees,
+* naive Bayes, and
+* logistic regression.
+
 ## Workflow
 * Batch train a model on data
 * Expose model as API
@@ -19,14 +29,14 @@ The solution is a simple python project that implements a script for training a 
 ### Project structure
 ```
 -- helloMLAPI
+  -- data                 # contains the data
+    -- organizations.csv
+  -- models               # contains the models trained on the data
+    -- xyz.py
+    -- xyz.pckl           # a persisted model
   -- api
-    -- data                 # contains the data
-      -- organizations.csv
-    -- models               # contains the model trained on the data
-      -- xyz.py
-      -- xyz.pckl           # the persisted model
-  -- server.py               # the api
-  -- Dockerfile
+    -- server.py          # the api
+    -- Dockerfile
   -- test
     -- test.py
   README.md
@@ -60,3 +70,4 @@ Response should include a list of industrial codes and descriptions that matches
 ## Credits
 * http://blog.socratesk.com/blog/2018/01/29/expose-ML-model-as-REST-API
 * https://towardsdatascience.com/a-flask-api-for-serving-scikit-learn-models-c8bcdaa41daa
+* [Russel and Norvig(2010): Artificial Intelligence. A Modern Approach. Third Edition.](http://aima.cs.berkeley.edu/)

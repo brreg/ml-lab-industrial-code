@@ -43,9 +43,9 @@ The solution is a simple python project that implements a script for training a 
 ```
 ### Requirements
 * Flask ([Python micro web framework](http://flask.pocoo.org/))
+* sklearn ([scikit-learn](http://scikit-learn.org/stable/))
 * pickle ([Python object serialization](https://docs.python.org/2.7/library/pickle.html)), or
 * joblib ([Scikit learn model persistence](http://scikit-learn.org/stable/modules/model_persistence.html))
-* sklearn ([scikit-learn](http://scikit-learn.org/stable/))
 ### Deploy
 To start the server locally:
 ```

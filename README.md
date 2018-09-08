@@ -1,4 +1,4 @@
-# helloMLAPI
+# ML Lab Industrial Code
 
 A simple project to experiment with exposing an ML-model as a REST API.
 

@@ -23,7 +23,9 @@ Once we have chosen a set of features, we can apply any of the supervised learni
 * Update model
 
 ## Solution architecture
-TODO
+Our ML pipeline looks like this:
+![architecture](./ML_pipeline.svg)
+credits: Emily Fox & Carlos Guestrin
 ## Solution
 The solution is a simple python project that implements a script for training a model as well as a server that exposes the api.
 ### Project structure

@@ -11,7 +11,7 @@ The task at hand is considered a task of text classification (aka categorization
 What type of machine learning system are we looking at? In the following we will try to describe our system along three categories:
 ### Supervised vs unsupervised learning
 
-#### [Supervised learning algorithms
+#### Supervised learning algorithms
 * [k-Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification)
 * [Linear Regression](https://scikit-learn.org/stable/modules/linear_model.html)
 * [Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
